@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background: #fff;
+    padding: 40px 30px 30px 30px;
+    border-radius: 16px;
+    max-width: 500px;
+    margin: 60px auto;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#inputTarea {
+    width: 60%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+#btnAgregar {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: #d3d6d8;
+    color: #222;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#btnAgregar:hover {
+    background: #bdbdbd;
+}
+
+#btnBorrarTodo {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.2s;
+}
+
+#btnBorrarTodo:hover {
+    background: #c0392b;
+}
+
+#mensaje {
+    color: #e74c3c;
+    margin-top: 12px;
+    min-height: 20px;
+    font-size: 1rem;
+}
+
+ul#listaTareas {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    text-align: left;
+}
+
+ul#listaTareas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+}
+
+.tarea {
+    flex: 1;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.tarea.completada {
+    text-decoration: line-through;
+    color: #10b981;
+    opacity: 0.7;
+}
+
+.eliminar {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    margin-left: 16px;
+    transition: background 0.2s;
+}
+
+.eliminar:hover {
+    background: #c0392b;
+}
